@@ -1,0 +1,196 @@
+.main {
+    padding: 120px 0;
+    display: grid;
+    gap: 120px;
+}
+.section__header {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: $title;
+}
+
+.section__cards {
+    display: grid;
+    gap: 32px;
+    margin-bottom: 120px;
+}
+
+.section__cards--popular {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.card {
+    position: relative;
+}
+
+.card__img {
+    border-radius: 12px;
+}
+
+.card__title {
+    color: $title;
+    font-weight: 500;
+}
+
+.card__location {
+    font-size: 13px;
+    z-index: 9;
+    position: relative;
+    color: $text;
+    transition: 0.2s ease-in;
+    &:hover {
+        color: $accent;
+    }
+}
+
+.card__link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.section__cards--hotels {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button-more {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #5243C2;
+    border-radius: 12px;
+    height: 44px;
+    background: #f6f4ff;
+    padding: 10px;
+    transition: 0.2s ease-in;
+    &:hover {
+        background-color: #d8d6e7;
+    }
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.card__img--hotel {
+    margin-bottom: 10px;
+}
+
+.card__location--item {
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: 0px 2px;
+    background-image: url(./../../css/img/main/location_card.svg);
+}
+
+.section__cards--activities {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card__img--activities {
+    margin-bottom: 10px;
+}
+
+.section__cards--travelTips {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card__title--big {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__footer--desc {
+    font-size: 12px;
+    margin-top: auto;
+    display: flex;
+    justify-content: start;
+    column-gap: 24px;
+}
+
+.card__img--desc {
+    margin: 0;
+}
+.card__text--desc {
+    line-height: 32px;
+}
+
+.card__footer-link {
+    position: relative;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    color: $text;
+    z-index: 1;
+    transition: 0.2s ease-in;
+    &:hover {
+        color: $accent;
+    }
+}
+
+.card__footer-link--date {
+    background-image: url(./../../css/img/main/travelTips_advice/icon/date.svg);
+    background-position: 0px 1px;
+    padding-left: 20px;
+}
+
+.card__footer-link--author {
+    background-image: url(./../../css/img/main/travelTips_advice/icon/author.svg);
+    background-position: 0px 1px;
+    padding-left: 20px;
+}
+
+.card__footer-link--comments {
+    background-image: url(./../../css/img/main/travelTips_advice/icon/comments.svg);
+    background-position: 0px 1px;
+    padding-left: 20px;
+}
+
+.card--desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.card__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section__aboutUs {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1144px;
+}
+
+.card--aboutUs {
+    line-height: 32px;
+}
+
+.aboutUs {
+    display: grid;
+    gap: 32px;
+    align-content: center;
+}
+
+.card__img-aboutUs {
+    border-radius: 24px;
+}
+
+.aboutUs__button {
+    justify-self: flex-start;
+}

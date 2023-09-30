@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 54px;
+}
+.nav-list {
+    display: flex;
+    column-gap: 54px;
+}
+
+.nav-list__link {
+    color: $text;
+    transition: 0.25s ease-in;
+    &:hover {
+        color: $accent;
+    }
+}
+
+.nav-list__link--active {
+    color: #fff;
+}
