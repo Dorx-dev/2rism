@@ -30,28 +30,28 @@
 .form__input--location {
     max-width: 300px;
     &::before {
-        background-image: url(./../../css/img/header/icon/icon-location.svg);
+        background-image: url(./img/header/icon/icon-location.svg);
     }
 }
 
 .form__input--activity {
     max-width: 255px;
     &::before {
-        background-image: url(./../../css/img/header/icon/icon-activity.svg);
+        background-image: url(./img/header/icon/icon-activity.svg);
     }
 }
 
 .form__input--when {
     max-width: 255px;
     &::before {
-        background-image: url(./../../css/img/header/icon/icon-when.svg);
+        background-image: url(.//img/header/icon/icon-when.svg);
     }
 }
 
 .form__input--guests {
     max-width: 255px;
     &::before {
-        background-image: url(./../../css/img/header/icon/icon-guests.svg);
+        background-image: url(./img/header/icon/icon-guests.svg);
     }
 }
 

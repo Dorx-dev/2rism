@@ -101,8 +101,8 @@ html, body {
 }
 
 .header {
-  height: 100vh;
-  background-image: url(../../css/img/header/bg_header.jpg);
+  height: 90vh;
+  background-image: url(./img/header/bg_header.jpg);
   background-size: cover;
   background-position: center center;
   border-radius: 0 0 54px 54px;
@@ -292,28 +292,28 @@ html, body {
   max-width: 300px;
 }
 .form__input--location::before {
-  background-image: url(./../../css/img/header/icon/icon-location.svg);
+  background-image: url(./img/header/icon/icon-location.svg);
 }
 
 .form__input--activity {
   max-width: 255px;
 }
 .form__input--activity::before {
-  background-image: url(./../../css/img/header/icon/icon-activity.svg);
+  background-image: url(./img/header/icon/icon-activity.svg);
 }
 
 .form__input--when {
   max-width: 255px;
 }
 .form__input--when::before {
-  background-image: url(./../../css/img/header/icon/icon-when.svg);
+  background-image: url(.//img/header/icon/icon-when.svg);
 }
 
 .form__input--guests {
   max-width: 255px;
 }
 .form__input--guests::before {
-  background-image: url(./../../css/img/header/icon/icon-guests.svg);
+  background-image: url(./img/header/icon/icon-guests.svg);
 }
 
 .input {
@@ -451,7 +451,7 @@ html, body {
   padding-left: 20px;
   background-repeat: no-repeat;
   background-position: 0px 2px;
-  background-image: url(./../../css/img/main/location_card.svg);
+  background-image: url(./img/main/location_card.svg);
 }
 
 .section__cards--activities {
@@ -507,19 +507,19 @@ html, body {
 }
 
 .card__footer-link--date {
-  background-image: url(./../../css/img/main/travelTips_advice/icon/date.svg);
+  background-image: url(./img/main/travelTips_advice/icon/date.svg);
   background-position: 0px 1px;
   padding-left: 20px;
 }
 
 .card__footer-link--author {
-  background-image: url(./../../css/img/main/travelTips_advice/icon/author.svg);
+  background-image: url(./img/main/travelTips_advice/icon/author.svg);
   background-position: 0px 1px;
   padding-left: 20px;
 }
 
 .card__footer-link--comments {
-  background-image: url(./../../css/img/main/travelTips_advice/icon/comments.svg);
+  background-image: url(./img/main/travelTips_advice/icon/comments.svg);
   background-position: 0px 1px;
   padding-left: 20px;
 }
@@ -688,7 +688,7 @@ html, body {
   padding-left: 56px;
   padding-top: 32px;
   padding-bottom: 16px;
-  background-image: url(./../../css/img/footer/icon/mail.svg);
+  background-image: url(./img/footer/icon/mail.svg);
   background-repeat: no-repeat;
   background-position: 18px 24px;
   color: #161414;
