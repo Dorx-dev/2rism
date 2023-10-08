@@ -491,6 +491,14 @@ html, body {
   top: 24px;
 }
 
+.autoComplete_wrapper > input {
+  width: 250px !important;
+}
+
+#datepicker {
+  width: 250px !important;
+}
+
 .form__input--location {
   max-width: 300px;
 }
