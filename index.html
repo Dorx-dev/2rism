@@ -13,111 +13,160 @@
 <body>
     <header class="header">
         <div class="container container--header">
-         <nav class="nav">
-            <a href="index.html" class="logo">
-                <img src="./css/img/header/logo.svg" alt="2rism">
-            </a>
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="./css/img/logo.svg" alt="2rism">
+                </a>
+                
+                <div class="navig">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="index.html" class="nav-list__link nav-list__link--active">Home</a>
+                        </li>
 
-            <ul class="nav-list">
-                <li class="nav-list__item">
-                    <a href="#!" class="nav-list__link nav-list__link--active">Home</a>
-                </li>
+                        <li class="nav-list__item">
+                            <a href="tours.html" class="nav-list__link">Tours</a>
+                        </li>
 
-                <li class="nav-list__item">
-                    <a href="#!" class="nav-list__link">Hotels</a>
-                </li>
+                        <li class="nav-list__item">
+                            <a href="hotels.html" class="nav-list__link">Hotels</a>
+                        </li>
 
-                <li class="nav-list__item">
-                    <a href="#!" class="nav-list__link">Restaurants</a>
-                </li>
+                        <li class="nav-list__item">
+                            <a href="restaurants.html" class="nav-list__link">Restaurants</a>
+                        </li>
 
-                <li class="nav-list__item">
-                    <a href="#!" class="nav-list__link">Tours</a>
-                </li>
+                        <li class="nav-list__item">
+                            <a href="activities.html" class="nav-list__link">Activities</a>
+                        </li>
 
-                <li class="nav-list__item">
-                    <a href="#!" class="nav-list__link"> Destinations</a>
-                </li>
-
-                <li class="nav-list__item">
-                    <a href="#!" class="nav-list__link">Activities</a>
-                </li>
-
-                <li class="nav-list__item">
-                    <a href="#!" class="nav-list__link">Contact</a>
-                </li>
-            </ul>
-
-            <div class="user">
-                <div class="user__content">
-                    <div class="user__content-greeting">Hello,</div> 
-                    <div class="user__content-name">Ales Nesetril</div>
+                        <li class="nav-list__item">
+                            <a href="travelTips.html" class="nav-list__link">Travel Tips</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav__user">
+                    <div class="user">
+                        <div class="user__content">
+                            <div class="user__content-greeting">Hello,</div> 
+                            <div class="user__content-name">Ales Nesetril</div>
+                        </div>
+        
+                        <div class="user__avatar">
+                            <img class="user__avatar-img" src="./css/img/header/user.jpg" alt="avatar">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="user__avatar">
-                    <img class="user__avatar-img" src="./css/img/header/user.jpg" alt="avatar">
+                <button class="mobile-nav-btn">
+                    <div class="nav-icon"></div>
+                </button>
+            </nav>
+
+            <div class="header__content">
+                <h1 class="header__title">
+                    Discover the most engaging places
+                </h1>
+
+                <button class="header__button">
+                    <img src="./css/img/header/icon/icon-global.svg" alt="global_icon">
+                    Discover on 3D Globe
+                </button>
+            </div>
+
+            <form action="" class="header__form form">
+
+                <div class="form__input form__input--location">
+                    <label for="location" class="label">Location</label><br>
+                    <input type="text" placeholder="Explore nearby destinations" class="input" id="autoComplete">
+                </select>
                 </div>
-            </div>
 
-        </nav>
+                <div class="form__input form__input--activity">
+                    <label for="activity" class="label">Activity</label><br>
+                <select name="" id="Activity" class="select">
+                    <option value="all">All Activities</option>
+                    <option value="1">Sailing</option>
+                    <option value="2">Climbing</option>
+                    <option value="3">Skiing</option>
+                    <option value="4">Hiking</option>
+                    <option value="5">Extreme</option>
+                    <option value="6">Rural</option>
+                    <option value="7">Jungle</option>
+                    <option value="8">Geotourism</option>
+                </select>
+                </div>
 
-        <div class="header__content">
-            <h1 class="header__title">
-                Discover the most engaging places
-            </h1>
+                <div class="form__input form__input--when">
+                    <label for="date" class="label">When</label><br>
+                    <input type="text" placeholder="Choose a Date" class="input" id="datepicker">
+                </div>
 
-            <button class="header__button">
-                <img src="./css/img/header/icon/icon-global.svg" alt="global_icon">
-                Discover on 3D Globe
-            </button>
-        </div>
+                <div class="form__input form__input--guests">
+                    <label for="guest" class="label">Guests</label><br>
+                <select name="" id="guest" class="select">
+                    <option value="all">1 guest </option>
+                    <option value="1">2 guests</option>
+                    <option value="2">3 guests</option>
+                    <option value="3">4 guests or more</option>
+                </select>
+                </div>
 
-        <form action="" class="header__form form">
-
-            <div class="form__input form__input--location">
-                <label for="location" class="label">Location</label><br>
-                <input type="text" placeholder="Explore nearby destinations" class="input" id="autoComplete">
-            </select>
-            </div>
-
-            <div class="form__input form__input--activity">
-                <label for="activity" class="label">Activity</label><br>
-            <select name="" id="Activity" class="select">
-                <option value="all">All Activities</option>
-                <option value="1">Sailing</option>
-                <option value="2">Climbing</option>
-                <option value="3">Skiing</option>
-                <option value="4">Hiking</option>
-            </select>
-            </div>
-
-            <div class="form__input form__input--when">
-                <label for="date" class="label">When</label><br>
-                <input type="text" placeholder="Choose a Date" class="input" id="datepicker">
-            </div>
-
-            <div class="form__input form__input--guests">
-                <label for="guest" class="label">Guests</label><br>
-            <select name="" id="guest" class="select">
-                <option value="all">1 guest </option>
-                <option value="1">2 guests</option>
-                <option value="2">3 guests</option>
-                <option value="3">4 guests or more</option>
-            </select>
-            </div>
-
-            <button class="form__button">
-                <img src="./css/img/header/icon/icon-search.svg" alt="search">
-            </button>
-        </form>
-
+                <button class="form__button">
+                    <img src="./css/img/header/icon/icon-search.svg" alt="search">
+                </button>
+            </form>
         </div>
     </header>
+    
+    <div class="mobile-nav-fade">
+        <div class="mobile-nav">
+            <div class="mobile-user">
+                <div class="user">
+                    <div class="user__content">
+                        <div class="user__content-greeting--mobile">Hello,</div> 
+                        <div class="user__content-name--mobile">Ales Nesetril</div>
+                    </div>
+        
+                    <div class="user__avatar--mobile">
+                        <img class="user__avatar-img--mobile" src="./css/img/header/user.jpg" alt="avatar">
+                    </div>
+                </div>
+            </div>
+
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="nav-list__link nav-list__link--active">Home</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                    <a href="tours.html" class="nav-list__link">Tours</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                    <a href="hotels.html" class="nav-list__link">Hotels</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                    <a href="restaurants.html" class="nav-list__link">Restaurants</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                    <a href="activities.html" class="nav-list__link">Activities</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                    <a href="travelTips.html" class="nav-list__link">Travel Tips</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <main class="main">
         <section class="section">
             <div class="container">
-                <section class="section__header">
+                <section class="section__header--popular">
                     <h2 class="title-1">Popular Destinations</h2>
                 </section>
 
@@ -168,14 +217,14 @@
                 </section>
 
                 <section class="section__header">
-                    <h2 class="title-1">Hotels and Restaurants</h2>
+                    <h2 class="title-1">Hotels</h2>
                     
-                    <a href="#!" class="button-more">View all
+                    <a href="hotels.html" class="button-more">View all
                         <img src="./css/img/main/arrow.svg">
                     </a>
                 </section>
 
-                <section class="section__cards section__cards--hotels">
+                <section class="section__cards section__cards--hotelsRestaurants">
 
                     <div class="card">
                         <a href="#!" class="card__link"></a>
@@ -219,9 +268,60 @@
                 </section>
 
                 <section class="section__header">
-                    <h2 class="title-1">Travel Tips and Advice</h2>
+                    <h2 class="title-1">Restaurants</h2>
                     
-                    <a href="#!" class="button-more">View all
+                    <a href="restaurants.html" class="button-more">View all
+                        <img src="./css/img/main/arrow.svg">
+                    </a>
+                </section>
+
+                <section class="section__cards section__cards--hotelsRestaurants">
+
+                    <div class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img src="./css/img/main/hotels_restaurants/santaRosa.jpg" alt="hotel_restaurants" class="card__img card__img--hotel">
+                        <h3 class="card__title">Monastero Santa Rosa Hotel & Spa</h3>
+                        <footer class="card__footer">
+                            <a  href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BB%D0%B5%D1%80%D0%BD%D0%BE" class="card__location card__location--item">Salerno, Italy</a>
+                            <img src="./css/img/main/rating/rating_5.svg" alt="rating">
+                        </footer>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img src="./css/img/main/hotels_restaurants/tremezzo.jpg" alt="hotel_restaurants" class="card__img card__img--hotel">
+                        <h3 class="card__title">Grand Hotel Tremezzo</h3>
+                        <footer class="card__footer">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BE_(%D0%BE%D0%B7%D0%B5%D1%80%D0%BE)" class="card__location card__location--item">Lake Como, Italy</a>
+                            <img src="./css/img/main/rating/rating_3.svg" alt="rating">
+                        </footer>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img src="./css/img/main/hotels_restaurants/udaipur.jpg" alt="hotel_restaurants" class="card__img card__img--hotel">
+                        <h3 class="card__title">The Oberoi Udaivilas, Udaipur</h3>
+                        <footer class="card__footer">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%A3%D0%B4%D0%B0%D0%B9%D0%BF%D1%83%D1%80" class="card__location card__location--item">Udaipur, India</a>
+                            <img src="./css/img/main/rating/rating_4.svg" alt="rating">
+                        </footer>
+                    </div>
+
+                    <div class="card">
+                        <a href="#!" class="card__link"></a>
+                        <img src="./css/img/main/hotels_restaurants/AKAbeverly.jpg" alt="hotel_restaurants" class="card__img card__img--hotel">
+                        <h3 class="card__title">AKA Beverly Hills</h3>
+                        <footer class="card__footer">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D1%81-%D0%90%D0%BD%D0%B4%D0%B6%D0%B5%D0%BB%D0%B5%D1%81" class="card__location card__location--item">Los Angeles, United States</a>
+                            <img src="./css/img/main/rating/rating_3.svg" alt="rating" class="card__rating">
+                        </footer>
+                    </div>
+                </section>
+
+                <section class="section__header">
+                    <h2 class="title-1">Travel Tips</h2>
+                    
+                    <a href="travelTips.html" class="button-more">View all
                         <img src="./css/img/main/arrow.svg">
                     </a>
                 </section>
@@ -266,7 +366,7 @@
                 <section class="section__header">
                     <h2 class="title-1">Activities</h2>
                     
-                    <a href="#!" class="button-more">View all
+                    <a href="activities.html" class="button-more">View all
                         <img src="./css/img/main/arrow.svg">
                     </a>
                 </section>
@@ -318,7 +418,7 @@
         <div class="container">
             <div class="footer__row">
                 <div class="footer__copyright">
-                    <img src="./css/img/footer/icon/logo_footer.svg" alt="logo" class="footer__logo">
+                    <img src="./css/img/logo_secondary.svg" alt="logo" class="footer__logo">
 
                     <p class="copyright">© Dorx_developer.com</p>
 

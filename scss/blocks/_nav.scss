@@ -17,6 +17,19 @@
     }
 }
 
+.nav-list__link-secondary {
+    color: $text;
+    transition: 0.25s ease-in;
+    &:hover {
+        color: $accent;
+    }
+}
+
+.nav-list__link-secondary--active {
+    color: $title;
+    font-weight: 500;
+}
+
 .nav-list__link--active {
     color: #fff;
 }

@@ -9,11 +9,17 @@
     padding-bottom: 100px;
 }
 
+.headerSecondary {
+    background-color: #F9F9F9;
+    padding-top: 31px;
+    padding-bottom: 40px;
+}
+
+
 .container--header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     height: 100%;
 }
 

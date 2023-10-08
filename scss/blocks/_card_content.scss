@@ -10,9 +10,22 @@
     align-items: center;
 }
 
+.section__header--second {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .title-1 {
     font-size: 32px;
     font-weight: 600;
+    color: $title;
+}
+
+.title--second {
+    font-size: 50px;
+    font-weight: 700;
     color: $title;
 }
 
@@ -22,7 +35,7 @@
     margin-bottom: 120px;
 }
 
-.section__cards--popular {
+.section__cards {
     grid-template-columns: repeat(6, 1fr);
 }
 
@@ -58,7 +71,7 @@
     width: 100%;
 }
 
-.section__cards--hotels {
+.section__cards--hotelsRestaurants {
     grid-template-columns: repeat(4, 1fr);
 }
 

@@ -1,0 +1,248 @@
+@media (max-width: 1370px) {
+    .tours {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .tour {
+        gap: 12px;
+        text-align: center;
+        max-width: max-content;
+    }
+    .title__tour {
+        font-size: 30px;
+    }
+    .text__tour {
+        line-height: normal;
+    }
+    .img__tour {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+@media (max-width: 1230px) {
+    .nav__user {
+        display: none;
+    }
+    .navig {
+        display: none;
+    }
+    .form {
+        max-width: 320px;
+        height: auto;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .easepick-wrapper {
+        z-index: 9;
+    }
+    .form__input--when {
+        max-width: max-content;
+    }
+    .form__input--guests {
+        max-width: max-content;
+    }
+    .form__input--activity {
+        max-width: max-content;
+    }
+    .form__button {
+        padding: 20px;
+        border-radius: 12px;
+        background-color: $accent;
+        transition: 0.2s ease-in;
+        &:hover {
+            background-color: #7B27FF;
+        }
+    }
+    .main {
+        padding: 40px 0;
+        gap: 60px;
+    }
+    .section__header {
+        margin-bottom: 36px;
+    }
+    .section__cards {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+    .section__cards--popular {
+        grid-template-columns: auto auto;
+    }
+    .section__header--popular {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+    .section__cards--hotelsRestaurants {
+        grid-template-columns: auto auto;
+    }
+    .section__cards--travelTips {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card--desc {
+        grid-template-columns: auto auto;
+    }
+    .section__cards--activities {
+        grid-template-columns: auto auto;
+    }
+    .header__title {
+        margin-bottom: 24px;
+    }
+}
+@media (max-width: 1150px) {
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer__row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .footer__copyright {
+        align-self: center;
+        justify-self: center;
+    }
+    .footer__nav-wrapper {
+        align-self: center;
+        justify-self: center;
+    }
+    .footer__subscribe {
+        align-self: center;
+        justify-self: center;
+    }
+    .footer__subscribe-title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .button__subscribe {
+        padding: 30px 40px;
+        border-radius: 12px;
+        background-color: $accent;
+        transition: 0.2s ease-in;
+        &:hover {
+            background-color: #7B27FF;
+        }
+    }
+}
+@media (max-width: 930px) {
+    .header {
+        height: auto;
+        min-height: 500px;
+        border-radius: 0 0 40px 40px;
+    }
+    .container--header {
+        justify-content: flex-start;
+    }
+    .header__title  {
+        font-size: 32px;
+        line-height: normal;
+        align-items: center;
+    }
+    .header__button {
+        padding: 20px;
+        font-size: 16px;
+    }
+    .header__content {
+        margin-top: 40px;
+    }
+    .section__aboutUs {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__row {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 740px) {
+    .section__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        align-self: center;
+        justify-self: center;
+    }
+    .card__img-aboutUs {
+        align-self: center;
+        justify-self: center;
+    }
+    .title--aboutUs {
+        font-size: 18px;
+    }
+}
+@media (max-width: 680px) {
+    .header__title  {
+        font-size: 30px;
+        text-align: center;
+    }
+    .header__content {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .header__button {
+        padding: 16px;
+        font-size: 14px;
+    }
+    .card__title--big {
+        font-size: 18px;
+    }
+    .card__text--desc {
+        line-height: normal;
+        font-size: 14px;
+    }
+    .card--aboutUs {
+        line-height: normal;
+        font-size: 14px;
+    }
+    .aboutUs {
+        gap: 5px;
+    }
+    .section__cards {
+        margin-bottom: 50px;
+    }
+    .img__tour {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:610px) {
+    .card--desc {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 440px) {
+    .title-1 {
+        font-size: 24px !important;
+    }
+    .main {
+        padding: 30px 0;
+        gap: 20px;
+    }
+    .section__header {
+        margin-bottom: 26px;
+    }
+    .section__header--popular {
+        margin-bottom: 26px;
+    }
+}
