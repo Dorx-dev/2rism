@@ -17,11 +17,14 @@
                 <a href="index.html" class="logo">
                     <img src="./css/img/logo.svg" alt="2rism">
                 </a>
-                
                 <div class="navig">
                     <ul class="nav-list">
                         <li class="nav-list__item">
                             <a href="index.html" class="nav-list__link nav-list__link--active">Home</a>
+                        </li>
+
+                        <li class="nav-list__item">
+                            <a href="./Earth.html" class="nav-list__link ">3D Globe</a>
                         </li>
 
                         <li class="nav-list__item">
@@ -50,11 +53,13 @@
                     <div class="user">
                         <div class="user__content">
                             <div class="user__content-greeting">Hello,</div> 
-                            <div class="user__content-name">Ales Nesetril</div>
+                            <div class="user__content-name">Guest</div>
                         </div>
         
-                        <div class="user__avatar">
-                            <img class="user__avatar-img" src="./css/img/header/user.jpg" alt="avatar">
+                        <div> <!--class="user__avatar"-->
+                            <a href="http://phpauth/">
+                                <img class="user__avatar-img" src="./css/img/header/user.jpg" alt="avatar">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -68,8 +73,7 @@
                 <h1 class="header__title">
                     Discover the most engaging places
                 </h1>
-
-                <button class="header__button">
+                <button class="header__button" onclick="document.location='./Earth.html'">
                     <img src="./css/img/header/icon/icon-global.svg" alt="global_icon">
                     Discover on 3D Globe
                 </button>
@@ -126,11 +130,13 @@
                 <div class="user">
                     <div class="user__content">
                         <div class="user__content-greeting--mobile">Hello,</div> 
-                        <div class="user__content-name--mobile">Ales Nesetril</div>
+                        <div class="user__content-name--mobile">Guest</div>
                     </div>
         
-                    <div class="user__avatar--mobile">
-                        <img class="user__avatar-img--mobile" src="./css/img/header/user.jpg" alt="avatar">
+                    <div> <!--class="user__avatar--mobile"-->
+                        <a href="http://phpauth/">
+                            <img class="user__avatar-img--mobile" src="./css/img/header/user.jpg" alt="avatar">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -138,6 +144,10 @@
             <ul class="mobile-nav__list">
                 <li class="mobile-nav-item">
                     <a href="index.html" class="nav-list__link nav-list__link--active">Home</a>
+                </li>
+
+                <li class="mobile-nav-item">
+                    <a href="./Earth.html" class="nav-list__link ">3D Globe</a>
                 </li>
 
                 <li class="mobile-nav-item">
