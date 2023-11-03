@@ -90,6 +90,21 @@
     }
 }
 
+.button-back {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #000;
+    border-radius: 12px;
+    height: 44px;
+    background: #727978;
+    padding: 10px;
+    transition: 0.2s ease-in;
+    &:hover {
+        opacity:  0.7;
+    }
+}
+
 .card__footer {
     display: flex;
     justify-content: space-between;
@@ -152,10 +167,11 @@
     }
 }
 
-.card__footer-link--date {
+.card__footerDate {
     background-image: url(./img/main/travelTips_advice/icon/date.svg);
     background-position: 0px 1px;
     padding-left: 20px;
+    background-repeat: no-repeat;
 }
 
 .card__footer-link--author {

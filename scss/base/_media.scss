@@ -22,6 +22,17 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
     }
+    .form__button {
+        align-self: center;
+        padding: 25px;
+        width: 80px;
+        border-radius: 12px;
+        background-color: $accent;
+        transition: 0.2s ease-in;
+        &:hover {
+            background-color: #7B27FF;
+        }
+    }
 }
 @media (max-width: 1230px) {
     .nav__user {
@@ -47,15 +58,6 @@
     }
     .form__input--activity {
         max-width: max-content;
-    }
-    .form__button {
-        padding: 20px;
-        border-radius: 12px;
-        background-color: $accent;
-        transition: 0.2s ease-in;
-        &:hover {
-            background-color: #7B27FF;
-        }
     }
     .main {
         padding: 40px 0;
@@ -197,10 +199,7 @@
         max-width: 280px;
         margin: 0 auto;
     }
-    .header__button {
-        padding: 16px;
-        font-size: 14px;
-    }
+    
     .card__title--big {
         font-size: 18px;
     }
