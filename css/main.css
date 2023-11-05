@@ -1348,8 +1348,10 @@ html, body {
 
 .modal__box {
   background-color: #fff;
-  width: 1500px;
-  height: 1500px;
+  width: 1400px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding: 50px;
   border-radius: 5px;
   margin: 30px;
@@ -1379,6 +1381,10 @@ html, body {
   top: 15px;
   right: 20px;
   cursor: pointer;
+}
+
+.vk {
+  margin-top: 50px;
 }
 
 .quality-select {
