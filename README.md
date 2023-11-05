@@ -1,2 +1,2 @@
 # 2rism
-Website for choosing a tourist route https://2rism-khaki.vercel.app/
+Website for choosing a tourist route https://dorx-dev.github.io/2rism
