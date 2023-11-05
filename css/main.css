@@ -993,6 +993,11 @@ html, body {
   transition: all 0.2s ease-in;
 }
 
+@media (max-width: 1430px) {
+  .modal__box {
+    max-width: 1200px;
+  }
+}
 @media (max-width: 1370px) {
   .tours {
     display: -webkit-box;
@@ -1119,6 +1124,9 @@ html, body {
   .header__title {
     margin-bottom: 24px;
   }
+  .modal__box {
+    max-width: 1000px;
+  }
 }
 @media (max-width: 1150px) {
   .footer {
@@ -1179,6 +1187,11 @@ html, body {
     background-color: #7B27FF;
   }
 }
+@media (max-width: 1050px) {
+  .modal__box {
+    max-width: 800px;
+  }
+}
 @media (max-width: 930px) {
   .header {
     height: auto;
@@ -1236,6 +1249,11 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media (max-width: 850px) {
+  .modal__box {
+    max-width: 600px;
   }
 }
 @media (max-width: 740px) {
@@ -1308,6 +1326,9 @@ html, body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .modal__box {
+    max-width: 400px;
+  }
 }
 @media (max-width: 440px) {
   .title-1 {
@@ -1322,6 +1343,9 @@ html, body {
   }
   .section__header--popular {
     margin-bottom: 26px;
+  }
+  .modal__box {
+    max-width: 300px;
   }
 }
 .modal {
@@ -1348,7 +1372,7 @@ html, body {
 
 .modal__box {
   background-color: #fff;
-  max-width: 1400px;
+  width: 1370px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
