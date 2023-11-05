@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./libs/auto-complete/autoComplete.01.css">
     <script src="./js/main.js" defer></script>
     <script src="./js/modal.js" defer></script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <script type="text/javascript">
+    VK.init({ apiId: 51786206, onlyWidgets: true });
+    </script>
 </head>
 <body>
     <header class="header">
@@ -358,10 +362,12 @@
                                         <button class="close_bth-modal" id="closeModal1">
                                             <img src="./css/img/close.svg" alt="close">
                                         </button>
-                                        <h2>my modal</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, similique. Distinctio doloribus, numquam saepe eum accusamus autem praesentium iusto dolorem exercitationem ea aliquam ipsa atque amet, corporis officiis sunt aut earum inventore doloremque veritatis natus illo obcaecati minima! Sequi, hic perferendis ex sunt saepe aspernatur minima adipisci esse sit, totam mollitia, ea exercitationem rem eum blanditiis ducimus nesciunt iure unde dolores consectetur. Neque quae laudantium tempora voluptate nisi itaque, voluptatem praesentium ratione quidem deserunt consectetur sit repellendus ipsam quos voluptates. Et in nemo, excepturi fuga natus deserunt neque quas dignissimos totam libero, assumenda est officia animi, eius fugit velit quos possimus quod consequuntur temporibus soluta atque. Sed dolor ipsa quibusdam cumque amet molestiae quod quas ea consequuntur consequatur? Alias nam saepe ad, magnam similique sunt fugit iure assumenda minima. Pariatur tempore officiis maiores? Doloribus perferendis voluptatibus exercitationem sit dolor quaerat cum repudiandae quisquam cumque vel explicabo eaque quasi ratione ea est vero minima dignissimos, necessitatibus hic ut. Voluptatum, eveniet impedit nam facilis laboriosam voluptas possimus aliquam illum temporibus voluptatem? Fugit doloribus corrupti ipsa quaerat a, unde laboriosam ad, perferendis, officiis recusandae repudiandae reprehenderit in debitis reiciendis quae eveniet! Natus inventore maxime repellendus provident voluptates id, aperiam dolorum? Cumque, consequatur neque?
-                                        </p>
+                                        <div class="vk">
+                                            <div id="vk_comments"></div>
+                                            <script type="text/javascript">
+                                            VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+                                            </script>
+                                        </div>
                                     </div>
                                 </div>
                             </footer>
