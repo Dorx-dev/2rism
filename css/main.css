@@ -1348,7 +1348,7 @@ html, body {
 
 .modal__box {
   background-color: #fff;
-  width: 1400px;
+  max-width: 1400px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
