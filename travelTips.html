@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <script src="./js/secondary.js" defer></script>
     <script src="./js/modal.js" defer></script>
-    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-    <script type="text/javascript">
-    VK.init({ apiId: 51786206, onlyWidgets: true });
-    </script>
 </head>
 <body>
     <header class="headerSecondary">
@@ -142,19 +138,21 @@
                         <footer class="card__footer card__footer--desc">
                             <p class="card__footerDate">Today</p>
                             <a href="#!" class="card__footer-link card__footer-link--author">Maria Philips</a>
-                            <button class="card__footer-link card__footer-link--comments" id="openModal1">2</button>
+                            <a class="card__footer-link card__footer-link--comments" id="openModal1">0</a>
                             <div class="modal" id="modal1">
                                 <div class="modal__box">
                                     <button class="close_bth-modal" id="closeModal1">
                                         <img src="./css/img/close.svg" alt="close">
                                     </button>
-                                    <div class="vk">
-                                        <div id="vk_comments"></div>
-                                        <script type="text/javascript">
-                                        VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
-                                        </script>
-                                    </div>
-
+                                    <div id="disqus_thread"></div>
+                                    <script>
+                                        (function() { // DON'T EDIT BELOW THIS LINE
+                                        var d = document, s = d.createElement('script');
+                                        s.src = 'https://2rism-1.disqus.com/embed.js';
+                                        s.setAttribute('data-timestamp', +new Date());
+                                        (d.head || d.body).appendChild(s);
+                                        })();
+                                    </script>
                                 </div>
                             </div>
                         </footer>
@@ -172,13 +170,13 @@
                         <footer class="card__footer card__footer--desc">
                             <p class="card__footerDate">Today</p>
                             <a href="#!" class="card__footer-link card__footer-link--author">James Calzoni</a>
-                            <button class="card__footer-link card__footer-link--comments" id="openModal2">17</button>
+                            <a class="card__footer-link card__footer-link--comments" id="openModal2">0</a>
                             <div class="modal" id="modal2">
                                 <div class="modal__box">
                                     <button class="close_bth-modal" id="closeModal2">
                                         <img src="./css/img/close.svg" alt="close">
                                     </button>
-                        
+                                    
                                 </div>
                             </div>
                         </footer>
@@ -287,6 +285,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
