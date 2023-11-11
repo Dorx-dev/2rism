@@ -1,9 +1,11 @@
 document.getElementById("openModal1").addEventListener("click",function(){
     document.getElementById("modal1").classList.add("open")
+    document.body.style.overflow = 'hidden';
 });
 
 document.getElementById("closeModal1").addEventListener("click",function(){
     document.getElementById("modal1").classList.remove("open")
+    document.body.style.overflow = 'auto';
 });
 
 window,addEventListener('keydown', (e) => {
@@ -27,10 +29,12 @@ document.getElementById("modal1").addEventListener('click', event => {
 
 document.getElementById("openModal2").addEventListener("click",function(){
     document.getElementById("modal2").classList.add("open")
+    document.body.style.overflow = 'hidden';
 });
 
 document.getElementById("closeModal2").addEventListener("click",function(){
     document.getElementById("modal2").classList.remove("open")
+    document.body.style.overflow = 'auto';
 });
 
 window,addEventListener('keydown', (e) => {

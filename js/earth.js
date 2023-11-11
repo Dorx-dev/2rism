@@ -9,6 +9,27 @@ const hdBtn = document.querySelector(".hd");
 sdBtn.onclick = () => changeTextQuality("low");
 hdBtn.onclick = () => changeTextQuality("high");
 
+const pointsGeometry = new THREE.BufferGeometry();
+const pointsMaterial = new THREE.PointsMaterial({ size: 0.05, color: 0xff0000 });
+
+// Добавляем координаты точек
+const pointsVertices = new Float32Array([
+  1, 1, 1,  // Координаты первой точки
+  -1, -1, -1,  // Координаты второй точки и так далее...
+  // ...
+]);
+
+pointsGeometry.setAttribute('position', new THREE.BufferAttribute(pointsVertices, 3));
+const points = new THREE.Points(pointsGeometry, pointsMaterial);
+scene.add(points);
+
+// Добавляем обработчик события на щелчок по точке (опционально)
+points.addEventListener('click', (event) => {
+  // Обработка щелчка по точке
+  console.log('Point clicked!');
+});
+
+
 function createPathStrings(filename) {
   const basePath = "../img/skybox/";
   const baseFilename = basePath + filename;
@@ -102,6 +123,8 @@ function onWindowResize() {
 }
 
 window.addEventListener("resize", onWindowResize, false);
+
+
 
 init();
 animate();
