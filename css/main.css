@@ -1402,8 +1402,8 @@ html, body {
   background-color: transparent;
   padding: 5px;
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 10px;
+  right: 15px;
   cursor: pointer;
 }
 
