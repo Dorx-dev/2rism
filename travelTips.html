@@ -145,7 +145,19 @@
                                     <button class="close_bth-modal" id="closeModal1">
                                         <img src="./css/img/close.svg" alt="close">
                                     </button>
-                                    
+                                    <div id="disqus_thread"></div>
+                                    <script>
+                                        var disqus_config = function () {
+                                        this.page.url = 'https://2rism-khaki.vercel.app';  // Уникальный URL для первой формы
+                                        this.page.identifier = '2rism-1';  // Уникальный идентификатор для первой формы
+                                        };
+                                        (function() {
+                                            var d = document, s = d.createElement('script');
+                                            s.src = 'https://2rism-1.disqus.com/embed.js';
+                                            s.setAttribute('data-timestamp', +new Date());
+                                            (d.head || d.body).appendChild(s);
+                                        })();
+                                    </script>
                                 </div>
                             </div>
                         </footer>
@@ -169,7 +181,16 @@
                                     <button class="close_bth-modal" id="closeModal2">
                                         <img src="./css/img/close.svg" alt="close">
                                     </button>
+                                    <div id="disqus_thread"></div>
+                                    <script>
                                     
+                                        (function() {
+                                            var d = document, s = d.createElement('script');
+                                            s.src = 'https://2rism-2.disqus.com/embed.js';
+                                            s.setAttribute('data-timestamp', +new Date());
+                                            (d.head || d.body).appendChild(s);
+                                        })();
+                                    </script>
                                 </div>
                             </div>
                         </footer>
